@@ -35,6 +35,7 @@ Call widget in your View.
 <?= \andrewdanilov\context\adsense\Adsense::widget([
 	'dataAdClient' => 'ca-pub-1234567890123456',
 	'dataAdSlot' => 1234567890,
+	'dataAdLayout' => 'in-article', // optional
 	'dataAdFormat' => 'auto', // optional, default is 'auto'
 	'dataFullWidthResponsive' => false, // optional, default is true
 ]); ?>
