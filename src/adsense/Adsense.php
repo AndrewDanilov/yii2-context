@@ -9,7 +9,7 @@ class Adsense extends Widget
 	public $slot;
 	public $format = 'auto';
 	public $layout;
-	public $dataFullWidthResponsive;
+	public $fullWidthResponsive;
 
 	public function run()
 	{
@@ -23,7 +23,7 @@ class Adsense extends Widget
 			'slot' => $this->slot,
 			'format' => $this->format,
 			'layout' => $this->layout,
-			'dataFullWidthResponsive' => $this->dataFullWidthResponsive,
+			'fullWidthResponsive' => $this->fullWidthResponsive,
 		]);
 	}
 }

@@ -37,7 +37,7 @@ Call widget in your View.
 	'slot' => 1234567890,
 	'format' => 'auto', // optional, default is 'auto'
 	'layout' => 'in-article', // optional
-	'dataFullWidthResponsive' => false, // optional
+	'fullWidthResponsive' => true, // optional
 ]); ?>
 ```
 
