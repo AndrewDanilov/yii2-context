@@ -76,7 +76,7 @@ return [
 		'definitions' => [
 			'frontend\widgets\yandexpartner\YandexPartner' => [
 				'blocks' => [
-					'set1' => ['R-A-123456-1', 'R-A-123456-2', 'R-A-123456-3'],
+					'set1' => ['R-A-222222-1', 'R-A-222222-2', 'R-A-222222-3'],
 					'set2' => ['R-A-111111-2', 'R-A-111111-3'],
 					'set3' => ['R-A-111111-1'],
 				],
