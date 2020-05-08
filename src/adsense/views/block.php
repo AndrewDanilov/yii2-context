@@ -1,18 +1,18 @@
 <?php
 /* @var $this \yii\web\View */
-/* @var $dataAdClient string */
-/* @var $dataAdSlot int */
-/* @var $dataAdLayout string */
-/* @var $dataAdFormat string */
-/* @var $dataFullWidthResponsive bool */
+/* @var $client string */
+/* @var $slot int */
+/* @var $format string */
+/* @var $layout string */
+/* @var $fullWidthResponsive bool */
 ?>
 <ins class="adsbygoogle"
      style="display:block"
-     data-ad-client="<?= $dataAdClient ?>"
-     data-ad-slot="<?= $dataAdSlot ?>"
-     data-ad-format="<?= $dataAdFormat ?>"
-     <?php if ($dataAdLayout !== null) { ?>data-ad-layout="<?= $dataAdLayout ?>"<?php } ?>
-     <?php if ($dataFullWidthResponsive) { ?>data-full-width-responsive="true"<?php } ?>></ins>
+     data-ad-client="<?= $client ?>"
+     data-ad-slot="<?= $slot ?>"
+     data-ad-format="<?= $format ?>"
+     <?php if ($layout !== null) { ?>data-ad-layout="<?= $layout ?>"<?php } ?>
+     <?php if ($fullWidthResponsive !== null) { ?>data-full-width-responsive="<?= $fullWidthResponsive ? 'true' : 'false' ?>"<?php } ?>></ins>
 <script>
 	(adsbygoogle = window.adsbygoogle || []).push({});
 </script>

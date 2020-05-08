@@ -5,24 +5,24 @@ use yii\base\Widget;
 
 class Adsense extends Widget
 {
-	public $dataAdClient;
-	public $dataAdSlot;
-	public $dataAdLayout;
-	public $dataAdFormat = 'auto';
-	public $dataFullWidthResponsive = true;
+	public $client;
+	public $slot;
+	public $format = 'auto';
+	public $layout;
+	public $dataFullWidthResponsive;
 
 	public function run()
 	{
-		if (!$this->dataAdClient || !$this->dataAdSlot) {
+		if (!$this->client || !$this->slot) {
 			return '';
 		}
 		$assetBundle = AdsenseAsset::register($this->getView());
-		$assetBundle->dataAdClient = $this->dataAdClient;
+		$assetBundle->client = $this->client;
 		return $this->render('block', [
-			'dataAdClient' => $this->dataAdClient,
-			'dataAdSlot' => $this->dataAdSlot,
-			'dataAdLayout' => $this->dataAdLayout,
-			'dataAdFormat' => $this->dataAdFormat,
+			'client' => $this->client,
+			'slot' => $this->slot,
+			'format' => $this->format,
+			'layout' => $this->layout,
 			'dataFullWidthResponsive' => $this->dataFullWidthResponsive,
 		]);
 	}

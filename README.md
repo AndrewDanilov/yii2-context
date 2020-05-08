@@ -33,15 +33,15 @@ Call widget in your View.
 
 ```php
 <?= \andrewdanilov\context\adsense\Adsense::widget([
-	'dataAdClient' => 'ca-pub-1234567890123456',
-	'dataAdSlot' => 1234567890,
-	'dataAdLayout' => 'in-article', // optional
-	'dataAdFormat' => 'auto', // optional, default is 'auto'
-	'dataFullWidthResponsive' => false, // optional, default is true
+	'client' => 'ca-pub-1234567890123456',
+	'slot' => 1234567890,
+	'format' => 'auto', // optional, default is 'auto'
+	'layout' => 'in-article', // optional
+	'dataFullWidthResponsive' => false, // optional
 ]); ?>
 ```
 
-Property `dataAdClient` is usually the same for all ad blocks. To set it once for all widget instances, you can define
+Property `client` is usually the same for all ad blocks. To set it once for all widget instances, you can define
 it in DI container config.
 
 ```php
@@ -50,7 +50,7 @@ return [
 	'container' => [
 		'definitions' => [
 			'andrewdanilov\context\adsense\Adsense' => [
-				'dataAdClient' => 'ca-pub-1234567890123456',
+				'client' => 'ca-pub-1234567890123456',
 			],
 		],
 	],
