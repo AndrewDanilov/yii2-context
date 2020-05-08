@@ -5,7 +5,7 @@ use yii\web\AssetBundle;
 
 class AdsenseAsset extends AssetBundle
 {
-	public $dataAdClient;
+	public $client;
 
 	public $sourcePath = null;
 	public $css = [];
@@ -18,8 +18,8 @@ class AdsenseAsset extends AssetBundle
 		parent::init();
 		$this->jsOptions['async'] = 'async';
 		$this->jsOptions['position'] = \yii\web\View::POS_HEAD;
-		if (isset($this->dataAdClient)) {
-			$this->jsOptions['data-ad-client'] = $this->dataAdClient;
+		if (isset($this->client)) {
+			$this->jsOptions['data-ad-client'] = $this->client;
 		}
 	}
 }
