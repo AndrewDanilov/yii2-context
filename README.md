@@ -74,7 +74,7 @@ return [
 	// ...
 	'container' => [
 		'definitions' => [
-			'frontend\widgets\yandexpartner\YandexPartner' => [
+			'andrewdanilov\context\yandexpartner\YandexPartner' => [
 				'blocks' => [
 					'set1' => ['R-A-222222-1', 'R-A-222222-2', 'R-A-222222-3'],
 					'set2' => ['R-A-111111-2', 'R-A-111111-3'],
@@ -84,7 +84,7 @@ return [
 		],
 		'singletons' => [
 			'YandexPartnerStore' => [
-				'class' => 'frontend\widgets\yandexpartner\YandexPartnerStore'
+				'class' => 'andrewdanilov\context\yandexpartner\YandexPartnerStore'
 			],
 		],
 	],
