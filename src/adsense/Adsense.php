@@ -16,8 +16,13 @@ class Adsense extends Widget
 		if (!$this->client || !$this->slot) {
 			return '';
 		}
-		$assetBundle = AdsenseAsset::register($this->getView());
-		$assetBundle->client = $this->client;
+
+        $view = $this->getView();
+        $view->getAssetManager()->bundles[AdsenseAsset::class] = [
+            'client' => $this->client,
+        ];
+        AdsenseAsset::register($view);
+
 		return $this->render('block', [
 			'client' => $this->client,
 			'slot' => $this->slot,
